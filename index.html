@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="login-container">
+            <h1><i class="fa-solid fa-lock" style="color: #33c0eb;"></i> DIF EXAMS</h1>
+            <div class="input-container">
+                <i class="fas fa-user"></i>
+                <input type="text" id="user-id" placeholder="User ID" required>
+            </div>
+            <div class="input-container">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <button id="login-btn" class="btn">Login</button>
+            <p id="login-error" class="error hide">Invalid ID or Password</p>
+        </div>
+        <div class="card hide" id="quiz">
+            <h1>Quiz App</h1>
+            <div id="question-container" class="hide">
+                <div id="question" class="question-text">Question text</div>
+                <div id="answer-buttons" class="btn-container"></div>
+            </div>
+            <div id="result-container" class="hide">
+                <div class="result-card">
+                    <h2>Quiz Results</h2>
+                    <p id="score">You scored <span id="score-value"></span> out of <span id="total-questions"></span></p>
+                    <button id="restart-btn" class="btn">Restart Quiz</button>
+                    <button id="view-details-btn" class="btn">View Details</button>
+                    <div id="details-container" class="hide">
+                        <h3>Details</h3>
+                        <ul id="details-list"></ul>
+                    </div>
+                </div>
+            </div>
+            <button id="start-btn" class="btn hide">Start Quiz</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div>
+    <footer>
+        <span>Created By <a href="https://saz-portfolio-596d0b.netlify.app/">SAZ</a> | <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
